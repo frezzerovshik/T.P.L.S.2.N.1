@@ -97,6 +97,8 @@
 		323F21C6232C65A300CA8EC7 /* Relatives */ = {
 			isa = PBXGroup;
 			children = (
+				323F21B9232C5F5600CA8EC7 /* Base.cpp */,
+				323F21AF232C5F5600CA8EC7 /* Base.hpp */,
 				323F21B4232C5F5600CA8EC7 /* Mother.cpp */,
 				323F21B6232C5F5600CA8EC7 /* Mother.hpp */,
 				323F21B1232C5F5600CA8EC7 /* Sister.cpp */,
@@ -109,8 +111,6 @@
 				323F21B8232C5F5600CA8EC7 /* Grandmother.hpp */,
 				323F21AB232C5F5600CA8EC7 /* Aunt.cpp */,
 				323F21B7232C5F5600CA8EC7 /* Aunt.hpp */,
-				323F21B9232C5F5600CA8EC7 /* Base.cpp */,
-				323F21AF232C5F5600CA8EC7 /* Base.hpp */,
 				323F21AA232C5F5600CA8EC7 /* Brother.cpp */,
 				323F21AE232C5F5600CA8EC7 /* Brother.hpp */,
 			);

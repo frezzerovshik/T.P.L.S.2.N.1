@@ -9,6 +9,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <fstream>
 //Commit 14.09.19 - first stage
 using namespace std;
 
@@ -20,6 +21,7 @@ class Base{
     string *birhtDate;
     string *deathDate;
     string *age;
+    ofstream log;//Для записи информации о вызовах конструкторов и деструкторов
 public:
     Base();
     Base(fstream &init);

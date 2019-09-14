@@ -8,8 +8,11 @@
 //commit 14.09.19 - first stage
 #include "Base.hpp"
 #include <fstream>
+#include <ctime>
 #define DICTIONARY_OF_FIELDS string dictionary[7] = {"fullName","parentInfo","spouseInfo","kidsInfo","birthDate","deathDate","age"};
 Base::Base(){
+    time_t seconds = time(NULL);
+    tm* timeinfo = localtime(&seconds);
     fullName = new string;
     parentInfo = new string;
     spouseinfo = new string;
@@ -17,8 +20,13 @@ Base::Base(){
     birhtDate = new string;
     deathDate = new string;
     age = new string;
+    cout<<"Log "<<asctime(timeinfo)<<": in file Base_Constructor_Log.txt"<<endl;
+    log.open("Base_Constructor_Log.txt",std::ios::app);
+    log<<asctime(timeinfo)<<" - конструктор по умолчанию, вызван, инициализация произошла, память выделена."<<endl;
 }
 Base::Base(fstream &init){
+    time_t seconds = time(NULL);
+    tm* timeinfo = localtime(&seconds);
     fullName = new string;
     parentInfo = new string;
     spouseinfo = new string;
@@ -33,8 +41,13 @@ Base::Base(fstream &init){
     getline(init , *birhtDate);
     getline(init , *deathDate);
     getline(init , *age);
+    cout<<"Log "<<asctime(timeinfo)<<": in file Base_Constructor_Destructor_Log.txt"<<endl;
+    log.open("Base_Constructor_Destructor_Log.txt",std::ios::app);
+    log<<asctime(timeinfo)<<" - конструктор с параметром(чтение данных из файла), вызван, инициализация произошла, память выделена."<<endl;
 }
 Base::Base(const Base& init){
+    time_t seconds = time(NULL);
+    tm* timeinfo = localtime(&seconds);
     fullName = new string;
     parentInfo = new string;
     spouseinfo = new string;
@@ -49,8 +62,13 @@ Base::Base(const Base& init){
     *birhtDate = *(init.birhtDate);
     *deathDate = *(init.deathDate);
     *age = *(init.age);
+    cout<<"Log "<<asctime(timeinfo)<<": in file Base_Constructor_Destructor_Log.txt"<<endl;
+    log.open("Base_Constructor_Destructor_Log.txt",std::ios::app);
+    log<<asctime(timeinfo)<<" - конструктор копирования, вызван, копия создана."<<endl;
 }
 Base::~Base(){
+    time_t seconds = time(NULL);
+    tm* timeinfo = localtime(&seconds);
     delete fullName;
     delete parentInfo;
     delete spouseinfo;
@@ -58,6 +76,9 @@ Base::~Base(){
     delete birhtDate;
     delete deathDate;
     delete age;
+    cout<<"Log "<<asctime(timeinfo)<<": in file Base_Constructor_Destructor_Log.txt"<<endl;
+    log.open("Base_Constructor_Destructor_Log.txt",std::ios::app);
+    log<<asctime(timeinfo)<<" - деструктор, вызван, копия создана."<<endl;
 }
 string* Base::getData(string kindOf){
     DICTIONARY_OF_FIELDS
