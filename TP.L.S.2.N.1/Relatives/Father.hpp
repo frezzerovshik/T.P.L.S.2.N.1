@@ -1,18 +1,18 @@
 //
-//  Sister.hpp
-//  T.P.L.B.1_2.SEM
+//  Father.hpp
+//  TP.L.S.2.N.1
 //
-//  Created by Артем Шарапов on 13/09/2019.
+//  Created by Артем Шарапов on 16/09/2019.
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 #pragma once
 #include "Base.hpp"
-class Sister : public Base{
+class Father : public Base{
     string* kindOf;
 public:
-    Sister();
-    Sister(const Base& init) : Base(init){};
-    ~Sister();
+    Father();
+    Father(const Base& init) : Base(init){};
+    ~Father();
     string* getData();
     void setData(string arg);
     bool operator!();

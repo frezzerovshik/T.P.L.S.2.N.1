@@ -7,3 +7,17 @@
 //
 
 #include "Grandfather.hpp"
+Grandfather::Grandfather(){
+    kindOf = new string;
+    kindOf->append("Mother");
+}
+Grandfather::~Grandfather(){
+    kindOf->erase();
+    delete kindOf;
+}
+bool Grandfather::operator!(){
+    if(kindOf == nullptr || kindOf->empty())
+        return true;
+    else
+        return false;
+}

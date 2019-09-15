@@ -18,6 +18,7 @@
 		323F21C2232C5F5700CA8EC7 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21B2232C5F5600CA8EC7 /* Factory.cpp */; };
 		323F21C3232C5F5700CA8EC7 /* Mother.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21B4232C5F5600CA8EC7 /* Mother.cpp */; };
 		323F21C4232C5F5700CA8EC7 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21B9232C5F5600CA8EC7 /* Base.cpp */; };
+		323F21CD232EF4CB00CA8EC7 /* Father.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21CB232EF4CB00CA8EC7 /* Father.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		323F21B7232C5F5600CA8EC7 /* Aunt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Aunt.hpp; sourceTree = "<group>"; };
 		323F21B8232C5F5600CA8EC7 /* Grandmother.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Grandmother.hpp; sourceTree = "<group>"; };
 		323F21B9232C5F5600CA8EC7 /* Base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base.cpp; sourceTree = "<group>"; };
+		323F21CB232EF4CB00CA8EC7 /* Father.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Father.cpp; sourceTree = "<group>"; };
+		323F21CC232EF4CB00CA8EC7 /* Father.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Father.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				323F21B7232C5F5600CA8EC7 /* Aunt.hpp */,
 				323F21AA232C5F5600CA8EC7 /* Brother.cpp */,
 				323F21AE232C5F5600CA8EC7 /* Brother.hpp */,
+				323F21CB232EF4CB00CA8EC7 /* Father.cpp */,
+				323F21CC232EF4CB00CA8EC7 /* Father.hpp */,
 			);
 			path = Relatives;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				323F21C0232C5F5700CA8EC7 /* Uncle.cpp in Sources */,
 				323F21C1232C5F5700CA8EC7 /* Sister.cpp in Sources */,
 				323F21BF232C5F5700CA8EC7 /* Grandfather.cpp in Sources */,
+				323F21CD232EF4CB00CA8EC7 /* Father.cpp in Sources */,
 				323F21C2232C5F5700CA8EC7 /* Factory.cpp in Sources */,
 				323F21BE232C5F5700CA8EC7 /* Aunt.cpp in Sources */,
 			);

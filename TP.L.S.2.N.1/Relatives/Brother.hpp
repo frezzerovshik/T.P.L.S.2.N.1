@@ -6,9 +6,15 @@
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 
-#ifndef Brother_hpp
-#define Brother_hpp
-
-#include <stdio.h>
-
-#endif /* Brother_hpp */
+#pragma once
+#include "Base.hpp"
+class Brother : public Base{
+    string* kindOf;
+public:
+    Brother();
+    Brother(const Base& init) : Base(init){};
+    ~Brother();
+    string* getData();
+    void setData(string arg);
+    bool operator!();
+};

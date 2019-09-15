@@ -12,8 +12,9 @@ class Mother : public Base{
     string* kindOf;
 public:
     Mother();
-    Mother(const Mother& init);
+    Mother(const Base& init) : Base(init){};
     ~Mother();
-    void whoAmI();
+    string* getData();
+    void setData(string arg);
     bool operator!();
 };

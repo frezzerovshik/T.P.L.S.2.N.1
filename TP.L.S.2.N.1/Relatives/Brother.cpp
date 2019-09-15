@@ -7,3 +7,16 @@
 //
 
 #include "Brother.hpp"
+Brother::Brother(){
+    kindOf = new string;
+    kindOf->append("Mother");
+}
+Brother::~Brother(){
+    kindOf->erase();
+    delete kindOf;
+}
+bool Brother::operator!(){
+    if(kindOf == nullptr || kindOf->empty())
+        return true;
+    else return false;
+}

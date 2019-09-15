@@ -7,3 +7,18 @@
 //
 
 #include "Mother.hpp"
+
+Mother::Mother(){
+    kindOf = new string;
+    kindOf->append("Mother");
+}
+Mother::~Mother(){
+    kindOf->erase();
+    delete kindOf;
+}
+bool Mother::operator!(){
+    if(kindOf == nullptr || kindOf->empty())
+        return true;
+    else
+        return false;
+}

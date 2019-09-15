@@ -7,3 +7,17 @@
 //
 
 #include "Aunt.hpp"
+Aunt::Aunt(){
+    kindOf = new string;
+    kindOf->append("Mother");
+}
+Aunt::~Aunt(){
+    kindOf->erase();
+    delete kindOf;
+}
+bool Aunt::operator!(){
+    if(kindOf == nullptr || kindOf->empty())
+        return true;
+    else
+        return false;
+}

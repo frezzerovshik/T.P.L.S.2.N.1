@@ -7,3 +7,16 @@
 //
 
 #include "Sister.hpp"
+Sister::Sister(){
+    kindOf = new string;
+    kindOf->append("Sister");
+}
+Sister::~Sister(){
+    kindOf->erase();
+    delete kindOf;
+}
+bool Sister::operator!(){
+    if(kindOf == nullptr || kindOf->empty())
+        return true;
+    else return false;
+}

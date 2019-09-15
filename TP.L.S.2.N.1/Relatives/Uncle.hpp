@@ -6,9 +6,15 @@
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 
-#ifndef Uncle_hpp
-#define Uncle_hpp
-
-#include <stdio.h>
-
-#endif /* Uncle_hpp */
+#pragma once
+#include "Base.hpp"
+class Uncle : public Base{
+    string* kindOf;
+public:
+    Uncle();
+    Uncle(const Base& init) : Base(init){};
+    ~Uncle();
+    string* getData();
+    void setData(string arg);
+    bool operator!();
+};

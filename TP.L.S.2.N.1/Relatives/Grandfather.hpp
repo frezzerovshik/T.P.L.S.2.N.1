@@ -6,9 +6,16 @@
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 
-#ifndef Grandfather_hpp
-#define Grandfather_hpp
+#pragma once
+#include "Base.hpp"
+class Grandfather : public Base{
+    string* kindOf;
+public:
+    Grandfather();
+    Grandfather(const Base& init) : Base(init){};
+    ~Grandfather();
+    string* getData();
+    void setData(string arg);
+    bool operator!();
+};
 
-#include <stdio.h>
-
-#endif /* Grandfather_hpp */

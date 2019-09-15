@@ -6,9 +6,15 @@
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 
-#ifndef Aunt_hpp
-#define Aunt_hpp
-
-#include <stdio.h>
-
-#endif /* Aunt_hpp */
+#pragma once
+#include "Base.hpp"
+class Aunt : public Base{
+    string* kindOf;
+public:
+    Aunt();
+    Aunt(const Base& init) : Base(init){};
+    ~Aunt();
+    string* getData();
+    void setData(string arg);
+    bool operator!();
+};

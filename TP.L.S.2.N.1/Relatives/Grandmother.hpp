@@ -6,9 +6,15 @@
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 
-#ifndef Grandmother_hpp
-#define Grandmother_hpp
-
-#include <stdio.h>
-
-#endif /* Grandmother_hpp */
+#pragma once
+#include "Base.hpp"
+class Grandmother : public Base{
+    string* kindOf;
+public:
+    Grandmother();
+    Grandmother(const Base& init) : Base(init){};
+    ~Grandmother();
+    string* getData();
+    void setData(string arg);
+    bool operator!();
+};
