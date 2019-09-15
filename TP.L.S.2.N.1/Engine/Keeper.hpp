@@ -21,10 +21,12 @@ class Keeper{
     Grandmother* *gmContainer;
     Factory builder;
 public:
+    Keeper(fstream &init);
+    Keeper(const Keeper& init);
+    ~Keeper();
     int runtime();//Метод-контроллер, вызывается в main
     void addNewObject();//Обрабатывает запрос, создает объект соответствующего класса, сохраняет в оперативной памяти
     void deleteObject();//Удаляет объект из контейнера
     void searchInContainer();//Осуществляет поиск по контейнеру
-    void fillFromFile(fstream &stream);
     void saveOnFile(ofstream &stream);
 };

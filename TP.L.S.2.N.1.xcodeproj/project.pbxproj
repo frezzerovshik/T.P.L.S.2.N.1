@@ -19,6 +19,8 @@
 		323F21C3232C5F5700CA8EC7 /* Mother.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21B4232C5F5600CA8EC7 /* Mother.cpp */; };
 		323F21C4232C5F5700CA8EC7 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21B9232C5F5600CA8EC7 /* Base.cpp */; };
 		323F21CD232EF4CB00CA8EC7 /* Father.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21CB232EF4CB00CA8EC7 /* Father.cpp */; };
+		323F21D0232EF84200CA8EC7 /* Shell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21CE232EF84200CA8EC7 /* Shell.cpp */; };
+		323F21D3232EF86D00CA8EC7 /* Family_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323F21D1232EF86D00CA8EC7 /* Family_tree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +60,10 @@
 		323F21B9232C5F5600CA8EC7 /* Base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base.cpp; sourceTree = "<group>"; };
 		323F21CB232EF4CB00CA8EC7 /* Father.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Father.cpp; sourceTree = "<group>"; };
 		323F21CC232EF4CB00CA8EC7 /* Father.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Father.hpp; sourceTree = "<group>"; };
+		323F21CE232EF84200CA8EC7 /* Shell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shell.cpp; sourceTree = "<group>"; };
+		323F21CF232EF84200CA8EC7 /* Shell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shell.hpp; sourceTree = "<group>"; };
+		323F21D1232EF86D00CA8EC7 /* Family_tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Family_tree.cpp; sourceTree = "<group>"; };
+		323F21D2232EF86D00CA8EC7 /* Family_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Family_tree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,10 @@
 				323F21B5232C5F5600CA8EC7 /* Factory.hpp */,
 				323F21A6232C5F5600CA8EC7 /* Keeper.cpp */,
 				323F21A8232C5F5600CA8EC7 /* Keeper.hpp */,
+				323F21CE232EF84200CA8EC7 /* Shell.cpp */,
+				323F21CF232EF84200CA8EC7 /* Shell.hpp */,
+				323F21D1232EF86D00CA8EC7 /* Family_tree.cpp */,
+				323F21D2232EF86D00CA8EC7 /* Family_tree.hpp */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -198,7 +208,9 @@
 				323F21C0232C5F5700CA8EC7 /* Uncle.cpp in Sources */,
 				323F21C1232C5F5700CA8EC7 /* Sister.cpp in Sources */,
 				323F21BF232C5F5700CA8EC7 /* Grandfather.cpp in Sources */,
+				323F21D3232EF86D00CA8EC7 /* Family_tree.cpp in Sources */,
 				323F21CD232EF4CB00CA8EC7 /* Father.cpp in Sources */,
+				323F21D0232EF84200CA8EC7 /* Shell.cpp in Sources */,
 				323F21C2232C5F5700CA8EC7 /* Factory.cpp in Sources */,
 				323F21BE232C5F5700CA8EC7 /* Aunt.cpp in Sources */,
 			);
