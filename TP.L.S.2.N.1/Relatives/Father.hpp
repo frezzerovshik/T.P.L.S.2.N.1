@@ -11,7 +11,7 @@ class Father : public Base{
     string* kindOf;
 public:
     Father();
-    Father(const Base& init) : Base(init){};
+    Father(const Base& init) : Base(init){kindOf = new string;kindOf->append("Father");};
     ~Father();
     string* getData();
     void setData(string arg);

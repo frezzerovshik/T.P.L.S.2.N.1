@@ -20,8 +20,8 @@ Base::Base(){
     birhtDate = new string;
     deathDate = new string;
     age = new string;
-    cout<<"Log "<<asctime(timeinfo)<<": in file Base_Constructor_Log.txt"<<endl;
-    log.open("Base_Constructor_Log.txt",std::ios::app);
+    cout<<"Log "<<asctime(timeinfo)<<": in file Base_Constructor_Destructor_Log.txt"<<endl;
+    log.open("Base_Constructor_Destructor_Log.txt",std::ios::app);
     log<<asctime(timeinfo)<<" - конструктор по умолчанию, вызван, инициализация произошла, память выделена."<<endl;
 }
 Base::Base(fstream &init){
@@ -119,38 +119,52 @@ string* Base::getData(string kindOf){
     }
     return returnedField;
 }
-void Base::setData(string kindOf, string data){
-    DICTIONARY_OF_FIELDS
+void Base::setData(){
+    string data;
     for(int i = 0;i<7;++i){
         switch (i) {
-            case 1:
-                if(kindOf.compare(dictionary[i]))
+            case 1:{
+                cout<<"Введите полное имя:"<<endl;
+                cin>>data;
                     *fullName = data;
                 break;
-            case 2:
-                if(kindOf.compare(dictionary[i]))
+            }
+            case 2:{
+                cout<<"Введите сведения о родителях:"<<endl;
+                cin>>data;
                     *parentInfo = data;
                 break;
-            case 3:
-                if(kindOf.compare(dictionary[i]))
-                    *spouseinfo = data;
+            }
+            case 3:{
+                cout<<"Введите сведения о супругах:"<<endl;
+                cin>>data;
+                *spouseinfo = data;
                 break;
-            case 4:
-                if(kindOf.compare(dictionary[i]))
+            }
+            case 4:{
+                cout<<"Введите сведения о детях:"<<endl;
+                cin>>data;
                     *kidsInfo = data;
                 break;
-            case 5:
-                if(kindOf.compare(dictionary[i]))
+            }
+            case 5:{
+                cout<<"Введите дату рождения:"<<endl;
+                cin>>data;
                     *birhtDate = data;
                 break;
-            case 6:
-                if(kindOf.compare(dictionary[i]))
+            }
+            case 6:{
+                cout<<"Введите дату смерти (если есть):"<<endl;
+                cin>>data;
                     *deathDate = data;
                 break;
-            case 7:
-                if(kindOf.compare(dictionary[i]))
+            }
+            case 7:{
+                cout<<"Введите возраст:"<<endl;
+                cin>>data;
                     *age = data;
                 break;
+            }
             default:
                 break;
         }

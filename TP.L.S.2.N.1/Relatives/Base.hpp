@@ -28,7 +28,7 @@ public:
     Base(const Base& init);
     ~Base();
     string* getData(string kindOf);
-    void setData(string kindOf , string data);
+    void setData();
     bool operator!();
     void operator<<(ofstream output);
     void editing();

@@ -7,21 +7,18 @@
 //
 #pragma once
 #include "Factory.hpp"
-enum inquiry {_Mother = 1 , _Father , _Brother , _Sister , _Uncle , _Aunt , _Grandfather , _Grandmother};
+#include "Family_tree.hpp"
+#include <fstream>
+enum inquiry {_Mother = 1 , _Father , _Brother , _Sister , _Grandfather , _Grandmother};
 
 class Keeper{
     //Массивы указателей на объекты классов, реализуем контейнер
-    Mother* *mContainer;
-    Father* *fContainer;
-    Brother* *bContainer;
-    Sister* cContainer;
-    Uncle* *uContainer;
-    Aunt* *aContainer;
-    Grandfather* *gfContainer;
-    Grandmother* *gmContainer;
+    Base* *container;
     Factory builder;
+    Family_tree *tree;
+    fstream sheet;
 public:
-    Keeper(fstream &init);
+    Keeper();
     Keeper(const Keeper& init);
     ~Keeper();
     int runtime();//Метод-контроллер, вызывается в main
@@ -29,4 +26,7 @@ public:
     void deleteObject();//Удаляет объект из контейнера
     void searchInContainer();//Осуществляет поиск по контейнеру
     void saveOnFile(ofstream &stream);
+    void printTree();
+    void parsingData();
+    void game();
 };

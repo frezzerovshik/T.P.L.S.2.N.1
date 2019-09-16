@@ -11,7 +11,7 @@ class Sister : public Base{
     string* kindOf;
 public:
     Sister();
-    Sister(const Base& init) : Base(init){};
+    Sister(const Base& init) : Base(init){kindOf = new string;kindOf->append("Sister");};
     ~Sister();
     string* getData();
     void setData(string arg);

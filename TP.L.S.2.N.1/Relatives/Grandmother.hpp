@@ -12,7 +12,7 @@ class Grandmother : public Base{
     string* kindOf;
 public:
     Grandmother();
-    Grandmother(const Base& init) : Base(init){};
+    Grandmother(const Base& init) : Base(init){kindOf = new string;kindOf->append("Grandmother");};
     ~Grandmother();
     string* getData();
     void setData(string arg);

@@ -11,19 +11,15 @@
 #include "Father.hpp"
 #include "Brother.hpp"
 #include "Sister.hpp"
-#include "Uncle.hpp"
-#include "Aunt.hpp"
 #include "Grandfather.hpp"
 #include "Grandmother.hpp"
 
 class Factory{
 public:
-    Mother* buildMother();
-    Father* buildFather();
-    Brother* buildBrother();
-    Sister* buildSister();
-    Uncle* buildUncle();
-    Aunt* buildAunt();
-    Grandfather* buildGrandfather();
-    Grandmother* buildGrandmother();
+    Base* buildMother(){Base *a = new Mother;return a;};
+    Base* buildFather(){Base *a = new Father;return a;};
+    Base* buildBrother(){Base *a = new Brother;return a;};
+    Base* buildSister(){Base *a = new Sister; return a;}
+    Base* buildGrandfather(){Base *a = new Grandfather;return a;};
+    Base* buildGrandmother(){Base *a = new Grandmother;return a;};
 };

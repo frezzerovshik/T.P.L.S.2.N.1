@@ -12,7 +12,7 @@ class Brother : public Base{
     string* kindOf;
 public:
     Brother();
-    Brother(const Base& init) : Base(init){};
+    Brother(const Base& init) : Base(init){kindOf = new string;kindOf->append("Brother");};
     ~Brother();
     string* getData();
     void setData(string arg);

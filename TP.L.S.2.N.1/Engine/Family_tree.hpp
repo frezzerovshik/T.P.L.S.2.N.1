@@ -6,9 +6,14 @@
 //  Copyright © 2019 Артем Шарапов. All rights reserved.
 //
 
-#ifndef Family_tree_hpp
-#define Family_tree_hpp
-
-#include <stdio.h>
-
-#endif /* Family_tree_hpp */
+#pragma once
+#include "Base.hpp"
+#include "Node.hpp"
+class Family_tree {
+    Node *root;
+public:
+    Family_tree();
+    void makeTree(Base* *array);
+    void deleteTree();
+    ~Family_tree();
+};

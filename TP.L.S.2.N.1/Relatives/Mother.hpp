@@ -12,7 +12,7 @@ class Mother : public Base{
     string* kindOf;
 public:
     Mother();
-    Mother(const Base& init) : Base(init){};
+    Mother(const Base& init) : Base(init){kindOf = new string;kindOf->append("Mother");};
     ~Mother();
     string* getData();
     void setData(string arg);
