@@ -9,7 +9,7 @@
 #pragma once
 #include "Base.hpp"
 typedef struct Node{
-    Shell data;
+    Base data;
     Node* *kids;
     int numKids;
 }Node;

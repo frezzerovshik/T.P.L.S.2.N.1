@@ -10,7 +10,7 @@
 #include "Family_tree.hpp"
 #include <fstream>
 enum inquiry {_Mother = 1 , _Father , _Brother , _Sister , _Grandfather , _Grandmother};
-
+enum criterion {_fullName = 1, _birthDate , _deathDate , _age };
 class Keeper{
     //Массивы указателей на объекты классов, реализуем контейнер
     Base* *container;
@@ -18,13 +18,13 @@ class Keeper{
     Family_tree *tree;
     fstream sheet;
 public:
-    Keeper();
+    Keeper(){};
     Keeper(const Keeper& init);
     ~Keeper();
     int runtime();//Метод-контроллер, вызывается в main
     void addNewObject();//Обрабатывает запрос, создает объект соответствующего класса, сохраняет в оперативной памяти
     void deleteObject();//Удаляет объект из контейнера
-    void searchInContainer();//Осуществляет поиск по контейнеру
+    Base* searchInContainer();//Осуществляет поиск по контейнеру
     void saveOnFile(ofstream &stream);
     void printTree();
     void parsingData();
